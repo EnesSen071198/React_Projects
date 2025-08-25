@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.categories-bar-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px auto;
+  gap: 20px; /* Kategoriler arası boşluk */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.category-title {
+  font-size: large;
+}
+.category-group {
+  position: relative; /* Alt kategorileri konumlandırmak için gerekli */
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 2px;
+  font-weight: bold;
+  color: #333333;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap; /* Tek satırda kalmasını sağlar */
+}
+
+.subcategory-container {
+  display: none; /* Varsayılan olarak görünmez */
+  position: absolute;
+  top: 100%; /* Kategorinin altına yerleşir */
+  left: 50%; /* Ortalamak için */
+  color: white;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  white-space: nowrap; /* Tek satırda kalır */
+  z-index: 10;
+  overflow: visible;
+}
+
+.category-group:hover .subcategory-container {
+  display: flex; /* Hover ile görünür olur */
+  gap: 10px; /* Alt kategoriler arası boşluk */
+  justify-content: center; /* Alt kategorileri yatay hizalar */
+  top: 100%; /* Kategorinin altına yerleşir */
+  overflow: visible;
+}
+
+.subcategory {
+  padding: 5px 16px;
+  background-color: #000000;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.subcategory:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+.search-container {
+  position: relative; /* Relatif pozisyon */
+  width: 100%; /* Genişlik */
+  display: flex; /* Flexbox düzeni */
+  align-items: center; /* Öğeleri ortala */
+  font-size: 17px; /* Yazı boyutu */
+}
+
+.search-input {
+  width: 100%; /* Genişlik */
+  padding: 1.5rem 3rem 1.5rem 1.5rem; /* Sağ dolgu simge için ayarlandı */
+  border: 1px solid #ebe2e2; /* Kenarlık */
+  background-color: lightgray; /* Arka plan rengi */
+  border-radius: 10rem; /* Yuvarlak köşeler */
+  text-align: start; /* Metni başlat */
+  text-indent: 30px; /* Metin girintisi */
+}
+
+.search-icon {
+  position: absolute; /* Mutlak pozisyon */
+  left: 120px; /* Gerektiği gibi ayarla */
+  color: gray; /* İkon rengi */
+}

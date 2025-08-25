@@ -1,0 +1,86 @@
+.main-top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Yatayda ortalamak için */
+  padding: 0 20px;
+  background-color: white;
+  border-bottom: 1px solid #ffffff;
+  width: 100%; /* Sayfanın tamamını kapsayacak şekilde genişlik */
+  max-width: 1200px; /* Genişliği sınırlama */
+  margin: 0 auto; /* Yatayda ortalamak için */
+}
+
+.main-top-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-top-subtitle {
+  font-size: 14px;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.main-top-button:hover {
+  background-color: #ede5f9;
+}
+
+.carousel-container {
+  margin-top: 20px; /* Carousel ile üst kısım arasına boşluk ekledim */
+  width: 100%; /* Carousel genişliğini tüm alana yayacak şekilde ayarladım */
+  max-width: 1200px; /* Carousel'ın max genişliği 1200px ile sınırlı */
+}
+.MuiStack-root.css-1fw1zk9-MuiStack-root {
+  padding: 35px;
+  margin-left: -40em;
+}
+
+/* Arka plan ve padding için buton stilleri */
+/* Carousel'in container'ı */
+.carousel-container {
+  position: relative;
+}
+
+/* Next ve prev butonları için stiller */
+.carousel-control-prev {
+  border-radius: 50%; /* Yuvarlak butonlar */
+  display: flex; /* Flexbox kullanarak içeriği ortala */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  position: absolute; /* Butonları konumlandırma */
+  top: 50%; /* Dikeyde ortalamak için %50 */
+  transform: translateY(-50%); /* Butonları tam olarak 
+  ortalamak için */
+  margin-top: 12em;
+}
+.carousel-control-next {
+  border-radius: 50%; /* Yuvarlak butonlar */
+  display: flex; /* Flexbox kullanarak içeriği ortala */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  position: absolute; /* Butonları konumlandırma */
+  top: 50%; /* Dikeyde ortalamak için %50 */
+  transform: translateY(-50%); /* Butonları tam olarak 
+  ortalamak için */
+  margin-top: 12em;
+}
+
+/* Next butonunun sağda konumlanması için */
+.carousel-control-next {
+  right: 10px; /* Sağ kenara 10px mesafe */
+}
+
+/* Prev butonunun solda konumlanması için */
+.carousel-control-prev {
+  left: 10px; /* Sol kenara 10px mesafe */
+}
+
+/* Simgelere stil uygulamak */
+.carousel-button-icon {
+  font-size: 50px; /* Icon boyutu */
+  color: black; /* Icon rengi */
+  border-radius: 50%; /* Yuvarlak simgeler */
+  background-color: #ffffff; /* Beyaz arka plan */
+  padding: 15px;
+}

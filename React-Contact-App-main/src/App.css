@@ -1,0 +1,51 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5; /* Arka plan rengi */
+}
+
+h1 {
+  color: #333; /* Başlık rengi */
+}
+
+input {
+  width: 300px; /* Giriş kutularının genişliği */
+  padding: 10px; /* İç boşluk */
+  margin: 10px 0; /* Dış boşluk */
+  border: 1px solid #ccc; /* Kenar rengi */
+  border-radius: 5px; /* Kenar yuvarlama */
+  font-size: 16px; /* Yazı boyutu */
+}
+
+button {
+  padding: 10px 15px; /* Buton iç boşluğu */
+  border: none; /* Kenar yok */
+  border-radius: 5px; /* Kenar yuvarlama */
+  background-color: #007bff; /* Buton rengi */
+  color: white; /* Buton yazı rengi */
+  font-size: 16px; /* Buton yazı boyutu */
+  cursor: pointer; /* İmleç şekli */
+  transition: background-color 0.3s; /* Renk geçişi */
+}
+
+button:hover {
+  background-color: #0056b3; /* Hover durumu için buton rengi */
+}
+
+ul {
+  list-style-type: none; /* Liste simgelerini kaldır */
+  padding: 0; /* İç boşluk kaldır */
+}
+
+li {
+  background-color: white; /* Liste öğeleri arka plan rengi */
+  padding: 10px; /* İç boşluk */
+  margin: 5px 0; /* Dış boşluk */
+  border-radius: 5px; /* Kenar yuvarlama */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}

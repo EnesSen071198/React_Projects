@@ -1,0 +1,104 @@
+/* Container to center and add padding */
+.container {
+  max-width: 2200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the articles section */
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row for the first 6 articles (2 rows of 3 items) */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 120%;
+  margin-left: -50px;
+  justify-content: start;
+}
+
+/* Individual article box styling */
+.article-box {
+  background-color: #f9f9f9;
+  width: 30%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.article-box:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+/* Image as background with dark overlay and text on top */
+.article-image {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Dark overlay on top of the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Darken the image */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title of the article */
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Author and date info */
+.author-info {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 10px;
+}
+
+.author,
+.date {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Styling for individual articles starting from the 7th one */
+.single-article {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.single-article h2 {
+  font-size: 1.5rem;
+}
+
+.single-article p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 150px;
+}

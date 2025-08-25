@@ -1,0 +1,175 @@
+.homepage-container {
+  padding: 15px 120px; /* Container padding */
+  margin-left: 5em; /* Sol marj */
+}
+
+.homepage-header {
+  display: flex; /* Başlığı flexbox olarak görüntüle */
+  justify-content: space-between; /* Öğeler arasına boşluk koy */
+  align-items: center; /* Öğeleri ortala */
+}
+input[type="text"] {
+  width: 80%; /* Metin girişi genişliği */
+  margin: 0.3rem 6rem; /* Metin girişi marjı */
+  padding: 1rem; /* Metin girişi dolgu */
+  border: 1px solid #fffefe; /* Metin girişi kenarlığı */
+  background-color: #ddd; /* Metin girişi arka plan rengi */
+  border-radius: 10rem; /* Metin girişinin köşeleri yuvarlatılmış */
+}
+.post-input-container {
+  display: flex; /* Container'ı flexbox olarak görüntüle */
+  margin-top: 1rem; /* Üst marj */
+}
+
+.post-input-wrapper {
+  flex: 1; /* Flex özelliği */
+  border-right: 1px solid #ddd; /* Sağ kenarlık */
+  margin-left: -90px; /* Sol marj */
+}
+
+.post-input {
+  width: 70%; /* Post girişi genişliği */
+  padding: 1rem; /* Post girişi dolgu */
+  margin-bottom: 1rem; /* Alt marj */
+  background-color: white; /* Post girişi arka plan rengi */
+  font-size: 1.5rem; /* Post girişi yazı boyutu */
+  border-right: 1px solid #ddd; /* Sağ kenarlık */
+}
+.actions {
+  display: flex; /* Aksiyonları flexbox olarak görüntüle */
+  align-items: center; /* Öğeleri ortala */
+  justify-content: space-between; /* Öğeler arasına boşluk koy */
+  margin-top: 0; /* Üst marj */
+  margin-bottom: 2rem; /* Alt marj */
+}
+.action-icons {
+  display: flex; /* İkonları flexbox olarak görüntüle */
+  align-items: center; /* Öğeleri ortala */
+  margin-left: 7rem; /* Sol marj */
+}
+
+.post-button {
+  background-color: #ff8700; /* Düğmenin arka plan rengi */
+  color: white; /* Yazı rengi */
+  padding: 0.5rem 1rem; /* Dolgu */
+  border-radius: 10rem; /* Köşeleri yuvarlatılmış */
+  border: none; /* Kenarlık yok */
+  cursor: pointer; /* Üzerine gelindiğinde pointer */
+  margin-right: 2rem; /* Sağ marj */
+}
+
+.post {
+  border-top: 1px solid #ddd; /* Üst kenarlık */
+  border-right: 1px solid #ddd; /* Sağ kenarlık */
+  padding: 1rem; /* Dolgu */
+  margin-bottom: 1rem; /* Alt marj */
+  border-radius: 5px; /* Köşeleri yuvarlatılmış */
+}
+.post-image {
+  width: 100%; /* Görüntü kapsayıcının tam genişliğini kaplar */
+  height: 400px; /* Görüntü yüksekliğini 400 piksel olarak sabitler */
+  margin: 0.5rem 0; /* Görüntünün üstünde ve altında 0.5 rem marj ekler */
+  border-radius: 25px; /* Görüntünün köşelerini 25 piksel yuvarlatır */
+  object-fit: cover; /* Görüntünün kapsayıcıyı bozulmadan kaplamasını sağlar */
+  background-position: center; /* Arka plan görüntüsünü ortalar */
+  background-size: cover; /* Arka plan görüntüsünü oranlarını koruyarak kapsayıcıya sığdırır */
+}
+
+.post-header {
+  display: flex; /* Başlığı flexbox olarak görüntüle */
+  align-items: center; /* Öğeleri ortala */
+  margin-bottom: 0.5rem; /* Alt marj */
+}
+
+.profile-image {
+  width: 50px; /* Profil görüntüsü genişliği */
+  height: 50px; /* Profil görüntüsü yüksekliği */
+  border-radius: 50%; /* Yuvarlak görüntü */
+  margin-right: 1rem; /* Sağ marj */
+}
+
+.post-header-text {
+  position: relative; /* Parent container'ı pozisyonlu hale getiriyoruz */
+  display: flex; /* Metni flexbox olarak görüntüle */
+  align-items: center; /* Öğeleri ortala */
+}
+
+.three-dots-icon {
+  position: absolute; /* Konumu özgürleştirir */
+  top: 0; /* Üstten sıfır piksel */
+  left: 42em; /* Soldan sıfır piksel */
+  color: gray; /* İkon rengi */
+  cursor: pointer; /* İkon üzerine gelindiğinde tıklanabilir olduğunu gösterir */
+}
+
+.username-info {
+  color: gray; /* Yazı rengi */
+  margin-left: 0.5rem; /* Boşluğu gerektiği gibi ayarlar */
+  font-size: 0.9rem; /* Yazı boyutunu gerektiği gibi ayarlar */
+}
+
+.post-actions {
+  display: flex; /* Aksiyonları flexbox olarak görüntüle */
+  justify-content: space-around; /* Öğeler arasına boşluk koy */
+  margin-top: 1rem; /* Üst marj */
+}
+
+.action-icon {
+  font-size: 1.5rem; /* Yazı boyutu */
+  cursor: pointer; /* Üzerine gelindiğinde pointer */
+  color: #333; /* Yazı rengi */
+  margin-right: 2rem; /* Sağ marj */
+  padding-right: 2rem; /* Sağ dolgu */
+  right: 2rem; /* Pozisyonlandırma */
+  color: #ddd; /* Yazı rengi */
+}
+
+.action-icon:hover {
+  color: #007bff; /* Üzerine gelindiğinde yazı rengi */
+}
+
+/*-------------------------------------------------*/
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0px 0rem; /* Dolgu */
+    margin: 0 -11em; /* Marj */
+    width: f-content; /* Genişlik */
+  }
+  .navbar {
+    display: none; /* Navbar'ı gizle */
+  }
+  input[type="text"] {
+    width: 100%; /* Metin girişi genişliği */
+    margin: 0.2rem 45px; /* Marj */
+  }
+  .actions {
+    margin-left: -88px; /* Sol marj */
+  }
+  .post {
+    padding: 0.5rem; /* Dolgu */
+  }
+
+  .profile-image {
+    width: 40px; /* Profil görüntüsü genişliği */
+    height: 40px; /* Profil görüntüsü yüksekliği */
+    z-index: 1; /* Z-index */
+  }
+
+  .username-info {
+    font-size: 12px; /* Yazı boyutu */
+  }
+
+  .post-image {
+    height: auto; /* Yükseklik */
+    max-height: 200px; /* Maksimum yükseklik */
+  }
+
+  .action-icon {
+    font-size: 0.9rem; /* Yazı boyutu */
+    margin-right: 0.5rem; /* Sağ marj */
+  }
+  .search-icon {
+    left: 60px; /* Pozisyonlandırma */
+  }
+}

@@ -1,0 +1,99 @@
+.course-detail-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 70em;
+}
+
+.course-detail {
+  display: flex;
+  justify-content: center; /* Ortada hizalamak için */
+  align-items: flex-start; /* Yukarı hizalama */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #1d1e27;
+  color: white;
+  height: 25em;
+}
+
+.course-detail .course-info {
+  flex: 1; /* Bu kısım esneyerek yer kaplayacak */
+  padding-right: 55px;
+  padding-left: 20em;
+}
+
+.course-detail h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center; /* Başlığı ortala */
+}
+
+.course-detail p {
+  font-size: 1.1rem;
+  line-height: 1.6; /* Paragraflar arasında daha fazla boşluk */
+  text-align: justify; /* Metni iki yana yasla */
+}
+
+/* Side Card */
+.sideCard {
+  background-color: white;
+  width: 20%;
+  margin-right: 20em;
+  height: 140%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow ekledik */
+  border-radius: 8px; /* Köşeleri yuvarlatma */
+  padding: 20px; /* İçeriği kenarlardan biraz uzaklaştır */
+  transition: box-shadow 0.3s ease; /* Hover efekti için geçiş */
+}
+
+.sideCard:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Hover efektinde daha belirgin bir gölge */
+}
+
+.sideCard img {
+  width: 100%;
+  height: 45%;
+  object-fit: cover;
+}
+
+.price {
+  font-size: 2em;
+  color: black;
+}
+
+.addButton {
+  padding: 1em;
+  background-color: #6d28d2;
+  color: white;
+  width: 100%;
+  border: none; /* Butonun kenarlıklarını kaldır */
+  border-radius: 4px; /* Buton köşelerini yuvarlat */
+  cursor: pointer; /* Butona hover efekti eklemek için */
+}
+
+.addButton:hover {
+  background-color: #4b1d9f; /* Buton hoverda renk değişimi */
+}
+.courseLearn {
+  border: 1px solid black;
+  padding: 2em;
+  position: absolute;
+  margin-top: 25em;
+  color: black;
+  margin-right: 27em;
+  width: 40%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Hover efektinde daha belirgin bir gölge */
+  text-indent: 1em;
+}
+.courseInfo {
+  border: 1px solid black;
+  padding: 2em;
+  position: absolute;
+  margin-top: 40em;
+  color: black;
+  margin-right: 27em;
+  width: 40%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Hover efektinde daha belirgin bir gölge */
+  text-indent: 1em;
+}

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px; /* Header yüksekliği kadar boşluk */
+}
+
+header {
+  position: fixed; /* Sayfa kaydırıldığında sabit kalması için */
+  top: 0;
+  left: 0;
+  width: 100%; /* Tam genişlik */
+  background-color: #000000;
+  padding: 20px 0; /* Daha yüksek header için padding */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* İçeriği ortalamak için */
+  z-index: 1000;
+  height: 70px;
+}
+.logo {
+  height: 10em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+img {
+  height: 70px; /* Daha büyük logo */
+  margin-right: 20px; /* Logonun kategorilerden ayrılması için boşluk */
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 20px; /* Kategoriler arasında boşluk */
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px; /* Daha büyük yazı boyutu */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Header yüksekliği kadar boşluk eklemek */
+body {
+  padding-top: 100px; /* Header yüksekliğini burada belirtebilirsiniz */
+}

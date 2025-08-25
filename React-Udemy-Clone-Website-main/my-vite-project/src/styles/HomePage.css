@@ -1,0 +1,111 @@
+.nav-link {
+  color: #000000;
+}
+navbar:hover {
+  background-color: #000000;
+}
+.nav-link:hover {
+  color: #000000;
+}
+@media (min-width: 600px) {
+  .css-1u9o2lj-MuiToolbar-root {
+    min-height: 64px;
+    width: 100%;
+    justify-content: start;
+    .MuiContainer-root {
+      padding: 0;
+      padding: 0;
+    }
+  }
+}
+/* Dropdown menü öğelerinin stilini ayarla */
+.dropdown-item {
+  color: #000;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+.me-auto:hover {
+  background-color: #ede5f9;
+  color: #712bd8;
+}
+.me-auto:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-explanation {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.me-auto:hover .dropdown-explanation {
+  display: block;
+  border: 1px solid #712bd8;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ede5f9;
+}
+.dropdown-item:hover {
+  background-color: #000000; /* Hover rengi */
+}
+/* Ana dropdown hover ile açılır */
+.basic-nav-dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 0;
+  background-color: #fff; /* Arka plan rengi */
+  border: 1px solid #ddd; /* Kenarlık ekleyebilirsiniz */
+}
+
+/* Alt menülerin sağa doğru açılması için */
+.dropdown-menu .dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 100%; /* Sağ tarafa açılır */
+  top: 0;
+  margin-top: 0;
+  background-color: #fff; /* Arka plan rengi */
+  border: 1px solid #ddd; /* Kenarlık ekleyebilirsiniz */
+}
+
+#nested-nav-dropdown {
+  color: #000;
+}
+.nav-item {
+  padding: 0 10px;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Alt menüdeki öğeleri varsayılan olarak gizle */
+#nested-nav-dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown-menu .dropdown-menu {
+  display: none;
+}
+
+/* Hover olduğunda alt menüyü göster */
+.dropdown-menu .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+/* Sadece "More Options" hover olduğunda "Option 1" ve "Option 2" gözüksün */
+#nested-nav-dropdown:hover > .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff; /* Arka plan rengi */
+  border: 1px solid #ddd; /* Kenarlık ekleyebilirsiniz */
+}
+
+/* Diğer dropdown öğelerinin alt menülerini tamamen gizle */
+#basic-nav-dropdown .dropdown-menu .dropdown-menu {
+  display: none !important;
+}
+
+/* "Action" ve "Something else here" hover olduğunda alt menülerin açılmasını engelle */
+#basic-nav-dropdown .dropdown-item:hover .dropdown-menu {
+  display: none !important;
+}
