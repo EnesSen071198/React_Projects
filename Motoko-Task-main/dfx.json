@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "street_animals_backend": {
+      "main": "src/street_animals_backend/main.mo",
+      "type": "motoko"
+    },
+    "street_animals_frontend": {
+      "dependencies": [
+        "street_animals_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/street_animals_frontend/src/index.html"
+      },
+      "source": [
+        "src/street_animals_frontend/assets",
+        "src/street_animals_frontend/src"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

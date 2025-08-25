@@ -1,0 +1,42 @@
+let = immutable , var = mutable
+
+actor calculator{
+  var cell  Int = 0;
+
+  Addition
+  public func add(s  Int)  async Int{
+      cell += s;
+      cell
+  };
+
+  Subtraction
+  public func sub(s  Int)  async Int{
+      cell -= s;
+      cell
+  };
+
+  Multiplication
+  public func multi(s  Int)  async Int{
+      cell = s;
+      cell
+  };
+
+  Division
+  public func div(s  Int)  async Int{
+    if(s==0){
+      null
+    }
+    else{
+          cell = s;
+          cell
+    };
+  };
+
+  Clean Cell
+  public func clean()  async () {
+    cell = 0;
+  };
+
+};
+
+CREATED BY ENES ŞEN
