@@ -1,0 +1,67 @@
+/* Genel navbar stil ayarları */
+.navbar {
+    background-color: #ff2222; /* Koyu bir arka plan rengi */
+    padding: 20px 0;
+    position: sticky; /* Sayfa kaydırıldığında üstte sabit kalması için */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Üstte kalması için */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+    height:40px;
+  }
+  
+  /* Ana container */
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Logo ayarları */
+  .main img {
+    height: 75px;
+    cursor: pointer;
+    margin-top: -16px;
+  }
+  
+  /* Linklerin düzeni */
+  .main div {
+    display: flex;
+    gap: 40px; /* Linkler arasına boşluk */
+  }
+  
+  .main div a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-top: -17px;
+  }
+  
+  /* Linklerin hover durumu */
+  .main div a:hover {
+    color: #f4d03f; /* Sarı renkli hover efekti */
+  }
+  
+  /* Mobil için hamburger menü */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column; /* Yatay yerine dikey yerleşim */
+      align-items: flex-start;
+    }
+  
+    .main div {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+  
+    .main img {
+      margin-bottom: 15px;
+    }
+  }
+  

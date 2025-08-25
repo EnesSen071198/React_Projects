@@ -1,0 +1,155 @@
+.App {
+  margin-bottom: 30px;
+}
+
+.cart {
+  text-align: center;
+}
+
+.cartClearButton {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: blue;
+  color: white;
+  cursor: pointer; /* İmleç değişimi */
+  transition: background-color 0.3s ease; /* Geçiş efekti */
+}
+
+.cartItemsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 sütun */
+  gap: 20px; /* Öğeler arasındaki boşluk */
+  padding: 20px;
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: column; /* Dikey yönde yerleştir */
+  justify-content: space-between; /* Elemanları dikeyde boşluk bırakacak şekilde ayarla */
+  padding: 10px;
+  border-radius: 8px; /* Kenar yuvarlama */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Daha belirgin gölgelendirme */
+  transition: transform 0.2s ease; /* Geçiş efekti */
+}
+
+.cartItem:hover {
+  transform: translateY(-5px); /* Hover sırasında yukarı kaydırma */
+}
+
+.cartItem img {
+  max-width: 100%; /* Resmin genişliğini %100 yap */
+  height: 200px; /* Yüksekliği sabit yap */
+  object-fit: cover; /* Resmin kapsama şekli */
+  border-radius: 8px; /* Resmin kenarlarını yuvarla */
+}
+
+.cartInfo {
+  text-align: center; /* Metni ortala */
+}
+
+.cartQuantity {
+  margin-right: 8px;
+}
+
+.buttons {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+}
+
+/* Buton stilleri */
+#up,
+#down {
+  width: 30%; /* Genişlik ayarı */
+  border: none; /* Kenar yok */
+  border-radius: 30px; /* Kenar yuvarlama */
+  font-size: 1em; /* Yazı boyutu */
+  color: white; /* Yazı rengi */
+  cursor: pointer; /* İmleç değişimi */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Geçiş efekti */
+}
+
+/* Yukarı artırma butonu için stil */
+#up {
+  background-color: #28a745; /* Yeşil arka plan */
+}
+
+#up:hover {
+  background-color: #218838; /* Hover efekti için daha koyu yeşil */
+  transform: scale(1.05); /* Hover sırasında büyütme */
+}
+
+/* Aşağı azaltma butonu için stil */
+#down {
+  background-color: #dc3545; /* Kırmızı arka plan */
+}
+
+#down:hover {
+  background-color: #c82333; /* Hover efekti için daha koyu kırmızı */
+  transform: scale(1.05); /* Hover sırasında büyütme */
+}
+
+/* Sil butonu için stil */
+.cartDeleteButton {
+  padding: 10px;
+  width: 32%;
+  border: none;
+  border-radius: 30px;
+  background-color: #261b1c; /* Kırmızı arka plan */
+  color: white; /* Yazı rengi */
+  cursor: pointer; /* İmleç değişimi */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Geçiş efekti */
+}
+
+.cartDeleteButton:hover {
+  background-color: #c82333; /* Hover efekti için daha koyu kırmızı */
+  transform: scale(1.05); /* Hover sırasında büyütme */
+}
+/* Navbar Stilleri */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* İki kenarı eşit uzaklıkta yerleştir */
+  align-items: center; /* Dikey merkezleme */
+  background-color: #25254a; /* Arka plan rengi */
+  color: white; /* Yazı rengi */
+  padding: 30px 20px; /* Üst ve alt ile yan boşluk */
+  border-radius: 5px; /* Kenar yuvarlama */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölgelendirme */
+}
+
+.navbar h2 {
+  margin: 0; /* Varsayılan margin'i kaldır */
+  font-size: 1.5em; /* Yazı boyutu */
+}
+
+.navDiv {
+  display: flex;
+  align-items: center; /* Dikey merkezleme */
+  padding: 0 50px;
+}
+
+.itemsDiv {
+  background-color: white; /* Arka plan rengi */
+  color: black; /* Yazı rengi */
+  width: 30px; /* Genişlik */
+  height: 30px; /* Yükseklik */
+  text-align: center; /* Metni ortala */
+  border-radius: 50%; /* Daire şekli */
+  margin-right: 15px; /* Sağdan boşluk */
+  font-weight: bold; /* Yazı kalınlığı */
+}
+
+.itemsIcon {
+  font-size: 1.5em; /* İkon boyutu */
+  color: white; /* İkon rengi */
+  margin-left: 10px; /* Soldan boşluk */
+}
+
+h4 {
+  margin: 0; /* Varsayılan margin'i kaldır */
+  font-size: 1em; /* Yazı boyutu */
+  text-align: center; /* Sağa hizalama */
+  padding: 10px 50px;
+}

@@ -1,0 +1,31 @@
+/* Footer için global stil */
+.footer {
+    background-color: #ff2222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    color: #f4d03f; /* Hover efekti */
+  }
+  
+  .footer-icons {
+    margin-top: 15px;
+  }
+  
+  .footer-icons a {
+    margin-right: 15px;
+    color: inherit;
+  }
+  
+  .footer-icons a:hover {
+    color: #f4d03f; /* Hover efekti */
+  }
+  

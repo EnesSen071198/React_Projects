@@ -1,0 +1,35 @@
+.menu-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* Hafif bir arka plan rengi */
+  }
+  
+  .menu-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Kart gölgelendirme */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Köşeleri yuvarlama */
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05); /* Kart üzerine gelince büyütme efekti */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+  }
+  
+  .menu-card img {
+    border-radius: 10px 10px 0 0; /* Üst köşelerde yuvarlama */
+  }
+  
+  .menu-card h5 {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .menu-card h6 {
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .menu-card p {
+    margin-top: 10px;
+    color: #555;
+  }
+  

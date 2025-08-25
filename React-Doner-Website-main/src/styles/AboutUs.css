@@ -1,0 +1,33 @@
+.about-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.about-section, .vision-section, .mission-section, .success-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h4, h5 {
+  color: #007BFF; /* Mavi başlık rengi */
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.about-section p, .vision-section p, .mission-section p, .success-section p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.MuiDivider-root {
+  margin: 40px 0;
+  background-color: #ddd;
+}

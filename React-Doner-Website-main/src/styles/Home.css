@@ -1,0 +1,73 @@
+/* Ana sayfa tam ekran arka plan ve içerik ortalama */
+.home {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out; /* Sayfa açılışında fade-in animasyonu */
+}
+
+/* İçerik kutusu */
+.home-content {
+  background-color: rgba(0, 0, 0, 0.6); /* Şeffaf siyah arka plan */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+  animation: slideIn 1s ease-in-out forwards; /* İçeriğin sayfaya kayarak girmesi */
+}
+
+/* Başlık ve alt başlık */
+.home-title {
+  font-size: 60px; /* Daha büyük ve dikkat çekici başlık */
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px; /* Harfler arası boşluk */
+}
+
+.home-subtitle {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #ddd; /* Alt başlık için hafif gri */
+}
+
+/* Sipariş Ver butonu */
+.order-button {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 50px; /* Yuvarlak buton */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Hover sırasında animasyon */
+}
+
+.order-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Hover sırasında buton büyütme efekti */
+}
+
+/* Fade in animasyonu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide in animasyonu */
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

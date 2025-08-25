@@ -1,0 +1,56 @@
+.app-container {
+  text-align: center; /* Tüm içerikleri ortalar */
+  margin-top: 50px; /* Sayfanın üst kısmından boşluk bırakır */
+  font-family: Arial, sans-serif; /* Yazı tipi */
+}
+
+h1 {
+  font-size: 24px; /* Başlık boyutu */
+  color: #333; /* Başlık rengi */
+}
+
+.input-container {
+  margin-bottom: 20px; /* Input ve butonun altına boşluk bırakır */
+}
+
+input {
+  padding: 10px; /* İç boşluk (padding) */
+  font-size: 16px; /* Yazı boyutu */
+  border-radius: 4px; /* Köşeleri yuvarlar */
+  border: 1px solid #ddd; /* İnce bir kenarlık ekler */
+  margin-right: 10px; /* Input ile buton arasına boşluk ekler */
+  width: 200px; /* Input genişliği */
+}
+
+button {
+  padding: 10px 15px; /* Butonun iç boşlukları */
+  background-color: #007BFF; /* Buton rengi (mavi) */
+  color: white; /* Yazı rengi */
+  border: none; /* Butonun kenarlığını kaldırır */
+  border-radius: 4px; /* Köşeleri yuvarlar */
+  cursor: pointer; /* Butonun üzerine gelindiğinde işaretçiyi değiştirir */
+}
+
+button:hover {
+  background-color: #0056b3; /* Butonun üzerine gelindiğinde arka plan rengi değişir */
+}
+
+.item-list {
+  list-style: none; /* Liste işaretlerini kaldırır (nokta, tire vb.) */
+  padding: 0; /* İç boşluğu sıfırlar */
+}
+
+.item {
+  margin: 10px 0; /* Her ürün arasında boşluk bırakır */
+  font-size: 18px; /* Yazı boyutu */
+  color: #333; /* Yazı rengi */
+}
+
+.item button {
+  margin-left: 10px; /* Buton ile ürün arasında boşluk bırakır */
+  background-color: #FF4136; /* Sil butonunun arka plan rengi (kırmızı) */
+}
+
+.item button:hover {
+  background-color: #c12d1d; /* Sil butonuna gelindiğinde arka plan rengi değişir */
+}
